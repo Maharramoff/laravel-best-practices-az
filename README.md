@@ -24,11 +24,11 @@ Hədəfimiz Laravel üçün SOLID, Dizayn şablonları və s. kimi bəlli təcr�
 
 [Blade Şablonlarında JS və CSS, PHP Kodunda isə HTML yazmayın](#Blade-şablonlarında-js-və-css-php-kodunda-isə-html-yazmayın)
 
+[Kodda mətn yazmaq əvəzinə config, dil sənədləri və sabitlər istifadə edin](#Kodda-mətn-yazmaq-əvəzinə-config-dil-sənədləri-və-sabitlər-istifadə-edin)
+
 [Laravel toplumunun qəbul etdiyi standart vasitələrdən və təcrübələrdən istifadə edin](#Laravel-toplumunun-qəbul-etdiyi-standart-vasitələrdən-və-təcrübələrdən-istifadə-edin)
 
 [Toplumun adlandırma konvensiyalarına riayət edin](#Toplumun-adlandırma-konvensiyalarına-riayət-edin)
-
-[Kodda mətn yazmaq əvəzinə config, dil sənədləri və sabitlər istifadə edin](#Kodda-mətn-yazmaq-əvəzinə-config-dil-sənədləri-və-sabitlər-istifadə-edin)
 
 [Mümkün olduqca qısa və oxunaqlı sintaksis istifadə edin](#Mümkün-olduqca-qısa-və-oxunaqlı-sintaksis-istifadə-edin)
 
@@ -376,9 +376,9 @@ Məlumatları backend-dən frontend-ə ötürmək üçün xüsusi bir paket isti
 
 [🔝 Başa qayıt](#Mündəricat)
 
-### **Конфиги, языковые файлы и константы вместо текста в коде**
+### **Kodda mətn yazmaq əvəzinə config, dil sənədləri və sabitlər istifadə edin**
 
-Непосредственно в коде не должно быть никакого текста.
+Kodda birbaşa hər-hansı mətn olmamalıdır.
 
 Pis:
 
@@ -388,7 +388,7 @@ public function isNormal()
     return $article->type === 'normal';
 }
 
-return back()->with('message', 'Ваша статья была успешно добавлена');
+return back()->with('message', 'Sizin məqalə uğurla əlavə olundu!');
 ```
 
 Yaxşı:
@@ -404,31 +404,32 @@ return back()->with('message', __('app.article_added'));
 
 [🔝 Başa qayıt](#Mündəricat)
 
-### **Используйте инструменты и практики принятые сообществом**
+### **Laravel toplumunun qəbul etdiyi standart vasitələrdən və təcrübələrdən istifadə edin**
 
 Laravel имеет встроенные инструменты для решения часто встречаемых задач. Предпочитайте пользоваться ими использованию сторонних пакетов и инструментов. Laravel разработчику, пришедшему в проект после вас, придется изучать и работать с новым для него инструментом, со всеми вытекающими последствиями. Получить помощь от сообщества будет также гораздо труднее. Не заставляйте клиента или работодателя платить за ваши велосипеды.
+Laraveldə tez-tez rast gəlinən məsələlərin həlli üçün standart alətlər mövcuddur. Üçüncü tərəf paketləri və alətlərdən istifadə etmək əvəzinə Laravelin öz alətlərdən istifadə etməyə üstünlük verin. Əks halda sizdən sonra layihəyə gələn Laravel developer, onun üçün yeni olan alətləri öyrənməyə vaxt itirməli, onlarla işləməli və bu alətlərin verə biləcəyi fəsadlarla mübarizə aparmalı olacaq. Bu səbəbdən toplumdan kömək almaq da çətin olacaq. Müştərinizi və ya işəgötürəninizi velosipedləriniz üçün əvəz ödəməyə məcbur etməyin.
 
-Задача | Стандартные инструмент | Нестандартные инструмент
+Məsələ | Standart alət | Qeyri-standart alət
 ------------ | ------------- | -------------
-Авторизация | Политики | Entrust, Sentinel и др. пакеты, собственное решение
-Работа с JS, CSS и пр. | Laravel Mix | Grunt, Gulp, сторонние пакеты
-Среда разработки | Homestead | Docker
-Разворачивание приложений | Laravel Forge | Deployer и многие другие
-Тестирование | Phpunit, Mockery | Phpspec
-e2e тестирование | Laravel Dusk | Codeception
-Работа с БД | Eloquent | SQL, построитель запросов, Doctrine
-Шаблоны | Blade | Twig
-Работа с данными | Коллекции Laravel | Массивы
-Валидация форм | Request классы | Сторонние пакеты, валидация в контроллере
-Аутентификация | Встроенный функционал | Сторонние пакеты, собственное решение
-Аутентификация API | Laravel Passport | Сторонние пакеты, использующие JWT, OAuth
-Создание API | Встроенный функционал | Dingo API и другие пакеты
-Работа со структурой БД | Миграции | Работа с БД напрямую
-Локализация | Встроенный функционал | Сторонние пакеты
-Обмен данными в реальном времени | Laravel Echo, Pusher | Пакеты и работа с веб сокетами напрямую
-Генерация тестовых данных | Seeder классы, фабрики моделей, Faker | Ручное заполнение и пакеты
-Планирование задач | Планировщик задач Laravel | Скрипты и сторонние пакеты
-БД | MySQL, PostgreSQL, SQLite, SQL Server | MongoDb
+Səlahiyyətlər | Policies | Entrust, Sentinel və digər paketlər və ya şəxsi həll
+JS, CSS və s. ilə işlər | Laravel Mix | Grunt, Gulp, kənar paketlər
+Proqramlaşdırma mühiti | Homestead | Docker
+Tətbiqin yerləşdirilməsi | Laravel Forge | Deployer və digərləri
+Testləmə | Phpunit, Mockery | Phpspec
+e2e testləmə | Laravel Dusk | Codeception
+VB ilə iş | Eloquent | SQL, Query Builder, Doctrine
+Şablonlar | Blade | Twig
+Məlumatlarla iş | Laravel Collections | Massivlər
+Form validasiyaları | Request sinifləri | Kənar paketlər, kontroller daxili validasiya
+Daxil olma | Daxili funksional | Kənar paketlər, şəxsi həll
+API ilə daxil olma | Laravel Passport | JWT işlədən kənar paketlər, OAuth
+API yaratma | Daxili funksional | Dingo API və digər paketlər
+VB strukturu ilə iş | Miqrasiyalar | VB ilə birbaşa işləmək
+Lokalizasiya | Daxili funksional | Kənar paketlər
+Real zamanda məlumatlarla iş | Laravel Echo, Pusher | Kənar paketlər və web-socketlərlə birbaşa işləmək
+Test dataların generasiyası | Seeder sinifləri, model fabrikləri, Faker | Manual daxil etmə və kənar paketlər
+Tapşırıq planlaması | Laravelin daxili funksionalı | Skriptlər və kənar paketlər
+VB | MySQL, PostgreSQL, SQLite, SQL Server | MongoDb
 
 [🔝 Başa qayıt](#Mündəricat)
 
