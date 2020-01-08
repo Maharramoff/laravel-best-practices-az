@@ -85,7 +85,7 @@ public function getFullNameShort()
 
 ### **İncə kontrollerlər, dolğun modellər**
 
-Eloquent ilə işləyərkən modellərə, Query Builder və ya standart SQL sorguları ilə işləyərkən isə Reposiroty siniflərinə  üstünlük verin.
+Eloquent ilə işləyərkən modellərə, Query Builder və ya standart SQL sorguları ilə işləyərkən isə Repository siniflərinə  üstünlük verin.
 
 Pis:
 
