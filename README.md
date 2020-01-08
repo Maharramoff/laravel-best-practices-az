@@ -508,7 +508,6 @@ Tez-tez istifadə olunan sintaksis | Daha yığcam və oxunaqlı sintaksis
 
 ### **"new Class" əvəzinə IoC və ya facade istifadə edin**
 
-Внедрение классов через синтаксис new Class создает сильное сопряжение между частями приложения и усложняет тестирование. Используйте контейнер или фасады.
 Sinflərin "new Class" Sintaksisi ilə tətbiq edilməsi, tətbiq hissələri arasında güclü bir bağ yaradır və testi çətinləşdirir. Bunun üçün **IoC** konteyner və ya **facade** istifadə edin.
 
 Pis:
@@ -533,9 +532,9 @@ $this->user->create($request->validated());
 
 [🔝 Başa qayıt](#Mündəricat)
 
-### **Не работайте с данными из файла `.env` напрямую**
+### **`.env` sənədindəki məlumatlarla birbaşa işləməyin**
 
-Передайте данные из `.env` файла в кофигурационный файл и используйте `config()` в приложении, чтобы использовать эти данными.
+Məlumatları `.env` faylından konfiqurasiya faylına köçürün və bu məlumatları istifadə etmək üçün tətbiqdə 'config ()' istifadə edin.
 
 Pis:
 
@@ -549,7 +548,7 @@ Yaxşı:
 // config/api.php
 'key' => env('API_KEY'),
 
-// Используйте данные в приложении
+// Tətbiqin konfiqurasiya faylını istifadə edin
 $apiKey = config('api.key');
 ```
 
