@@ -12,7 +12,7 @@ Hədəfimiz Laravel üçün SOLID, Dizayn şablonları və s. kimi bəlli təcr�
 
 [Biznes məntiqi xidməti siniflərdə](#Biznes-məntiqi-xidməti-siniflərdə)
 
-[Özün-özünü təkrarlama (DRY: Don't repeat yourself)](#Təkrar-etmə)
+[Özün-özünü təkrarlama (DRY: Don't repeat yourself)](#Özün-özünü-təkrarlama)
 
 [Sorğular konstruktorundan (query builder) və verilənlər bazasına birbaşa sorğulardan daha çox Eloquentə üstünlük verin. Massivlərlə işləmək üçün kolleksiyalara üstünlük verin](#Sorğular-konstruktorundan-(query-builder)-və-verilənlər-bazasına-birbaşa-sorğulardan-daha-çox-Eloquentə-üstünlük-verin.-Massivlərlə-işləmək-üçün-kolleksiyalara-üstünlük-verin)
 
@@ -208,9 +208,9 @@ class ArticleService
 
 [🔝 Başa qayıt](#Mündəricat)
 
-### **Не повторяйся (DRY)**
+### **Özün-özünü təkrarlama**
 
-Этот принцип призывает вас переиспользовать код везде, где это возможно. Если вы следуете принципу SRP, вы уже избегаете повторений, но Laravel позволяет вам также переиспользовать представления, части Eloquent запросов и т.д.
+Bu prinsip, bir dəfə yazdığınız kodu mümkün qədər lazım olan hər yerdə istifadə etməyə çağırır. Əgər siz SRP prinsipinə riayət edirsinizsə, təkrarlardan zatən qaçmış olursunuz, amma Laravel də view və bəzi Eloquent sorğularını təkrar istifadə etməyə imkan verir.
 
 Pis:
 
