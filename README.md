@@ -1,6 +1,4 @@
-![](img/logo.png?raw=true)
-![sdadsd](img/laravel.gif)
-
+![sdadsd](img/logo-full.gif)
 
 It's not a Laravel adaptation of SOLID principles, patterns etc. Here you'll find the best practices which are usually ignored in real life Laravel projects.
 
