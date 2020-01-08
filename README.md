@@ -467,7 +467,7 @@ Trait | sifət | Notifiable | ~~NotificationTrait~~
 
 [🔝 Başa qayıt](#Mündəricat)
 
-### **Короткий и читаемый синтаксис там, где это возможно**
+### **Mümkün olduqca qısa və oxunaqlı sintaksis istifadə edin**
 
 Pis:
 
@@ -483,9 +483,9 @@ session('cart');
 $request->name;
 ```
 
-Еще примеры:
+Digər nümunələr:
 
-Часто используемый синтаксис | Более короткий и читаемый синтаксис
+Tez-tez istifadə olunan sintaksis | Daha yığcam və oxunaqlı sintaksis
 ------------ | -------------
 `Session::get('cart')` | `session('cart')`
 `$request->session()->get('cart')` | `session('cart')`
