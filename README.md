@@ -252,7 +252,6 @@ public function getArticles()
 
 ### **Sorğular konstruktorundan (query builder) və verilənlər bazasına birbaşa sorğulardan daha çox Eloquentə üstünlük verin. Massivlərlə işləmək üçün kolleksiyalara üstünlük verin**
 
-Eloquent позволяет писать максимально читаемый код, а изменять функционал приложения несоизмеримо легче. У Eloquent также есть ряд удобных и мощных инструментов.
 Eloquent maksimum oxunaqlı kod yazmağa imkan verir, onun funksionalığını dəyişmək isə olduqca sadədir. Eloquentdə həmçinin, bir-sıra digər rahat və güclü alətlər var.
 
 Pis:
@@ -280,7 +279,7 @@ Article::has('user.profile')->verified()->latest()->get();
 
 [🔝 Başa qayıt](#Mündəricat)
 
-### **Используйте массовое заполнение (mass assignment)**
+### **Toplu doldurma istifadə edin**
 
 Pis:
 
@@ -302,9 +301,9 @@ $category->article()->create($request->validated());
 
 [🔝 Başa qayıt](#Mündəricat)
 
-### **Не выполняйте запросы в представлениях и используйте нетерпеливую загрузку (проблема N + 1)**
+### **View fayllarında sorğular yazmayın və xəsis yükləmədən istifadə edin (N + 1 problemi)**
 
-Pis (будет выполнен 101 запрос в БД для 100 пользователей):
+Pis (100 istifadəçi üçün verilənlər bazasına 101 sorğu gedəcək):
 
 ```php
 @foreach (User::all() as $user)
@@ -312,7 +311,7 @@ Pis (будет выполнен 101 запрос в БД для 100 польз�
 @endforeach
 ```
 
-Yaxşı (будет выполнено 2 запроса в БД для 100 пользователей):
+Yaxşı (100 istifadəçi üçün verilənlər bazasına cəmi 2 sorğu gedəcək):
 
 ```php
 $users = User::with('profile')->get();
@@ -326,7 +325,7 @@ $users = User::with('profile')->get();
 
 [🔝 Başa qayıt](#Mündəricat)
 
-### **Комментируйте код, предпочитайте читаемые имена методов комментариям**
+### **Kodlarınızı şərh edin, amma daha da yaxşısı oxunaqlı metod adlarına üstünlük verin**
 
 Pis:
 
@@ -334,7 +333,7 @@ Pis:
 if (count((array) $builder->getQuery()->joins) > 0)
 ```
 
-Лучше:
+Nisbətən yaxşı:
 
 ```php
 // Determine if there are any joins.
