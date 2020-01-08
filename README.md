@@ -4,41 +4,41 @@ Hədəfimiz Laravel üçün SOLID, Dizayn şablonları və s. kimi bəlli təcr�
 
 ## Mündəricat
 
-[Tək öhdəlik prinsipi (Single responsibility principle)](#tək-öhdəlik-prinsipi-single-responsibility-principle)
+[Tək öhdəlik prinsipi (Single responsibility principle)](#Tək-öhdəlik-prinsipi-single-responsibility-principle)
 
-[İncə kontrollerlər, dolğun modellər](#incə-kontrollerlər-dolğun-modellər)
+[İncə kontrollerlər, dolğun modellər](#İncə-kontrollerlər-dolğun-modellər)
 
 [Validasiya](#validasiya)
 
 [Biznes məntiqi xidməti siniflərdə](#Biznes-məntiqi-xidməti-siniflərdə)
 
-[Özün-özünü təkrarlama (DRY: Don't repeat yourself)](#təkrar-etmə)
+[Özün-özünü təkrarlama (DRY: Don't repeat yourself)](#Təkrar-etmə)
 
-[Sorğular konstruktorundan (query builder) və verilənlər bazasına birbaşa sorğulardan daha çox Eloquentə üstünlük verin. Massivlərlə işləmək üçün kolleksiyalara üstünlük verin](#sorğular-konstruktorundan-(query-builder)-və-verilənlər-bazasına-birbaşa-sorğulardan-daha-çox-Eloquentə-üstünlük-verin.-Massivlərlə-işləmək-üçün-kolleksiyalara-üstünlük-verin)
+[Sorğular konstruktorundan (query builder) və verilənlər bazasına birbaşa sorğulardan daha çox Eloquentə üstünlük verin. Massivlərlə işləmək üçün kolleksiyalara üstünlük verin](#Sorğular-konstruktorundan-(query-builder)-və-verilənlər-bazasına-birbaşa-sorğulardan-daha-çox-Eloquentə-üstünlük-verin.-Massivlərlə-işləmək-üçün-kolleksiyalara-üstünlük-verin)
 
-[Toplu doldurma istifadə edin (mass assignment)](#toplu-doldurma-istifadə-edin)
+[Toplu doldurma istifadə edin (mass assignment)](#Toplu-doldurma-istifadə-edin)
 
-[View fayllarında sorğular yazmayın və xəsis yükləmədən istifadə edin (N + 1 problemi)](#view-fayllarında-sorğular-yazmayın-və-xəsis-yükləmədən-istifadə-edin-N-1-problemi)
+[View fayllarında sorğular yazmayın və xəsis yükləmədən istifadə edin (N + 1 problemi)](#View-fayllarında-sorğular-yazmayın-və-xəsis-yükləmədən-istifadə-edin-N-1-problemi)
 
-[Kodlarınızı şərh edin, amma daha da yaxşısı oxunaqlı metod adlarına üstünlük verin](#kodlarınızı-şərh-edin-amma-daha-da-yaxşısı-oxunaqlı-metod-adlarına-üstünlük-verin)
+[Kodlarınızı şərh edin, amma daha da yaxşısı oxunaqlı metod adlarına üstünlük verin](#Kodlarınızı-şərh-edin-amma-daha-da-yaxşısı-oxunaqlı-metod-adlarına-üstünlük-verin)
 
-[Blade Şablonlarında JS və CSS, PHP Kodunda isə HTML yazmayın](#blade-şablonlarında-JS-və-CSS-PHP-Kodunda-isə-HTML-yazmayın)
+[Blade Şablonlarında JS və CSS, PHP Kodunda isə HTML yazmayın](#Blade-şablonlarında-JS-və-CSS-PHP-Kodunda-isə-HTML-yazmayın)
 
-[Laravel toplumunun qəbul etdiyi standart vasitələrdən və təcrübələrdən istifadə edin](#laravel-toplumunun-qəbul-etdiyi-standart-vasitələrdən-və-təcrübələrdən-istifadə-edin)
+[Laravel toplumunun qəbul etdiyi standart vasitələrdən və təcrübələrdən istifadə edin](#Laravel-toplumunun-qəbul-etdiyi-standart-vasitələrdən-və-təcrübələrdən-istifadə-edin)
 
-[Toplumun adlandırma konvensiyalarına riayət edin](#toplumun-adlandırma-konvensiyalarına-riayət-edin)
+[Toplumun adlandırma konvensiyalarına riayət edin](#Toplumun-adlandırma-konvensiyalarına-riayət-edin)
 
-[Kodda mətn yazmaq əvəzinə config, dil sənədləri və sabitlər istifadə edin](#kodda-mətn-yazmaq-əvəzinə-config-dil-sənədləri-və-sabitlər-istifadə-edin)
+[Kodda mətn yazmaq əvəzinə config, dil sənədləri və sabitlər istifadə edin](#Kodda-mətn-yazmaq-əvəzinə-config-dil-sənədləri-və-sabitlər-istifadə-edin)
 
-[Mümkün olduqca qısa və oxunaqlı sintaksis istifadə edin](#mümkün-olduqca-qısa-və-oxunaqlı-sintaksis-istifadə-edin)
+[Mümkün olduqca qısa və oxunaqlı sintaksis istifadə edin](#Mümkün-olduqca-qısa-və-oxunaqlı-sintaksis-istifadə-edin)
 
-["new Class" əvəzinə IoC və ya facade istifadə edin](#new-Class-əvəzinə-IoC-və-ya-facade-istifadə-edin)
+["new Class" əvəzinə IoC və ya facade istifadə edin](#New-Class-əvəzinə-IoC-və-ya-facade-istifadə-edin)
 
-[`.env` sənədindəki məlumatlarla birbaşa işləməyin](#env-sənədindəki-məlumatlarla-birbaşa-işləməyin)
+[`.env` sənədindəki məlumatlarla birbaşa işləməyin](#Env-sənədindəki-məlumatlarla-birbaşa-işləməyin)
 
-[Tarixləri standart formatda qeyd edin. Digər formata çevirmək üçün isə accessor və mutatorlardan istifadə edin](#tarixləri-standart-formatda-qeyd-edin-digər-formata-çevirmək-üçün-isə-accessor-və-mutatorlardan-istifadə-edin)
+[Tarixləri standart formatda qeyd edin. Digər formata çevirmək üçün isə accessor və mutatorlardan istifadə edin](#Tarixləri-standart-formatda-qeyd-edin-digər-formata-çevirmək-üçün-isə-accessor-və-mutatorlardan-istifadə-edin)
 
-[Digər tövsiyə və təcrübələr](#digər-tövsiyə-və-təcrübələr)
+[Digər tövsiyə və təcrübələr](#Digər-tövsiyə-və-təcrübələr)
 
 ### **Tək öhdəlik prinsipi (Single responsibility principle)**
 
