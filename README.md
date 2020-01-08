@@ -14,7 +14,7 @@ Hədəfimiz Laravel üçün SOLID, Dizayn şablonları və s. kimi bəlli təcr�
 
 [Özün-özünü təkrarlama (DRY: Don't repeat yourself)](#Özün-özünü-təkrarlama)
 
-[Sorğular konstruktorundan (query builder) və verilənlər bazasına birbaşa sorğulardan daha çox Eloquentə üstünlük verin. Massivlərlə işləmək üçün kolleksiyalara üstünlük verin](#Sorğular-konstruktorundan-(query-builder)-və-verilənlər-bazasına-birbaşa-sorğulardan-daha-çox-Eloquentə-üstünlük-verin.-Massivlərlə-işləmək-üçün-kolleksiyalara-üstünlük-verin)
+[Sorğular konstruktorundan (query builder) və verilənlər bazasına birbaşa sorğulardan daha çox Eloquentə üstünlük verin. Massivlərlə işləmək üçün kolleksiyalara üstünlük verin](#Sorğular-konstruktorundan-query-builder-və-verilənlər-bazasına-birbaşa-sorğulardan-daha-çox-Eloquentə-üstünlük-verin-massivlərlə-işləmək-üçün-kolleksiyalara-üstünlük-verin)
 
 [Toplu doldurma istifadə edin (mass assignment)](#Toplu-doldurma-istifadə-edin)
 
@@ -169,7 +169,6 @@ class PostRequest extends Request
 
 ### **Biznes məntiqi xidməti siniflərdə**
 
-Контроллер должен выполнять только свои прямые обязанности, поэтому выносите всю бизнес логику в отдельные классы и сервис классы.
 Kontroller yalnız birbaşa öz vəzifələrini yerinə yetirməlidir, ona görə də biznes məntiqini başqa siniflərə və service siniflərinə köçürün.
 
 Pis:
@@ -251,9 +250,10 @@ public function getArticles()
 
 [🔝 Başa qayıt](#Mündəricat)
 
-### **Предпочитайте Eloquent конструктору запросов (query builder) и сырым запросам в БД. Предпочитайте работу с коллекциями работе с массивами**
+### **Sorğular konstruktorundan (query builder) və verilənlər bazasına birbaşa sorğulardan daha çox Eloquentə üstünlük verin. Massivlərlə işləmək üçün kolleksiyalara üstünlük verin**
 
 Eloquent позволяет писать максимально читаемый код, а изменять функционал приложения несоизмеримо легче. У Eloquent также есть ряд удобных и мощных инструментов.
+Eloquent maksimum oxunaqlı kod yazmağa imkan verir, onun funksionalığını dəyişmək isə olduqca sadədir. Eloquentdə həmçinin, bir-sıra digər rahat və güclü alətlər var.
 
 Pis:
 
