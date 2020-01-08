@@ -18,7 +18,7 @@ Hədəfimiz Laravel üçün SOLID, Dizayn şablonları və s. kimi bəlli təcr�
 
 [Toplu doldurma istifadə edin (mass assignment)](#Toplu-doldurma-istifadə-edin)
 
-[View fayllarında sorğular yazmayın və xəsis yükləmədən istifadə edin (N + 1 problemi)](#View-fayllarında-sorğular-yazmayın-və-xəsis-yükləmədən-istifadə-edin-N-1-problemi)
+[View fayllarında sorğular yazmayın və xəsis yükləmədən istifadə edin (N + 1 problemi)](#View-fayllarında-sorğular-yazmayın-və-xəsis-yükləmədən-istifadə-edin-n--1-problemi)
 
 [Kodlarınızı şərh edin, amma daha da yaxşısı oxunaqlı metod adlarına üstünlük verin](#Kodlarınızı-şərh-edin-amma-daha-da-yaxşısı-oxunaqlı-metod-adlarına-üstünlük-verin)
 
