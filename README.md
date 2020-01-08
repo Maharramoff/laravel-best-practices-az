@@ -406,7 +406,6 @@ return back()->with('message', __('app.article_added'));
 
 ### **Laravel toplumunun qəbul etdiyi standart vasitələrdən və təcrübələrdən istifadə edin**
 
-Laravel имеет встроенные инструменты для решения часто встречаемых задач. Предпочитайте пользоваться ими использованию сторонних пакетов и инструментов. Laravel разработчику, пришедшему в проект после вас, придется изучать и работать с новым для него инструментом, со всеми вытекающими последствиями. Получить помощь от сообщества будет также гораздо труднее. Не заставляйте клиента или работодателя платить за ваши велосипеды.
 Laraveldə tez-tez rast gəlinən məsələlərin həlli üçün standart alətlər mövcuddur. Üçüncü tərəf paketləri və alətlərdən istifadə etmək əvəzinə Laravelin öz alətlərdən istifadə etməyə üstünlük verin. Əks halda sizdən sonra layihəyə gələn Laravel developer, onun üçün yeni olan alətləri öyrənməyə vaxt itirməli, onlarla işləməli və bu alətlərin verə biləcəyi fəsadlarla mübarizə aparmalı olacaq. Bu səbəbdən toplumdan kömək almaq da çətin olacaq. Müştərinizi və ya işəgötürəninizi velosipedləriniz üçün əvəz ödəməyə məcbur etməyin.
 
 Məsələ | Standart alət | Qeyri-standart alət
@@ -433,38 +432,38 @@ VB | MySQL, PostgreSQL, SQLite, SQL Server | MongoDb
 
 [🔝 Başa qayıt](#Mündəricat)
 
-### **Соблюдайте соглашения сообщества об именовании**
+### **Toplumun adlandırma konvensiyalarına riayət edin**
 
- Следуйте [стандартам PSR](http://www.php-fig.org/psr/psr-2/) при написании кода.
+ Kod yazarkən [PSR standartlarına](http://www.php-fig.org/psr/psr-2/) əməl edin.
  
- Также, соблюдайте другие cоглашения об именовании:
+ Həmçinin adlandırma ilə bağlı digər razılıqlara da əməl edin:
 
-Что | Правило | Принято | Не принято
+Nə | Qayda | Qəbul olunur | Qəbul olunmur
 ------------ | ------------- | ------------- | -------------
-Контроллер | ед. ч. | ArticleController | ~~ArticlesController~~
-Маршруты | мн. ч. | articles/1 | ~~article/1~~
-Имена маршрутов | snake_case | users.show_active | ~~users.show-active, show-active-users~~
-Модель | ед. ч. | User | ~~Users~~
-Отношения hasOne и belongsTo | ед. ч. | articleComment | ~~articleComments, article_comment~~
-Все остальные отношения | мн. ч. | articleComments | ~~articleComment, article_comments~~
-Таблица | мн. ч. | article_comments | ~~article_comment, articleComments~~
-Pivot таблица | имена моделей в алфавитном порядке в ед. ч. | article_user | ~~user_article, articles_users~~
-Столбец в таблице | snake_case без имени модели | meta_title | ~~MetaTitle; article_meta_title~~
-Свойство модели | snake_case | $model->created_at | ~~$model->createdAt~~
-Внешний ключ | имя модели ед. ч. и _id | article_id | ~~ArticleId, id_article, articles_id~~
-Первичный ключ | - | id | ~~custom_id~~
-Миграция | - | 2017_01_01_000000_create_articles_table | ~~2017_01_01_000000_articles~~
-Метод | camelCase | getAll | ~~get_all~~
-Метод в контроллере ресурсов | [таблица](https://laravel.com/docs/master/controllers#resource-controllers) | store | ~~saveArticle~~
-Метод в тесте | camelCase | testGuestCannotSeeArticle | ~~test_guest_cannot_see_article~~
-Переменные | camelCase | $articlesWithAuthor | ~~$articles_with_author~~
-Коллекция | описательное, мн. ч. | $activeUsers = User::active()->get() | ~~$active, $data~~
-Объект | описательное, ед. ч. | $activeUser = User::active()->first() | ~~$users, $obj~~
-Индексы в конфиге и языковых файлах | snake_case | articles_enabled | ~~ArticlesEnabled; articles-enabled~~
-Представление | kebab-case | show-filtered.blade.php | ~~showFiltered.blade.php, show_filtered.blade.php~~
-Конфигурационный файл | snake_case | google_calendar.php | ~~googleCalendar.php, google-calendar.php~~
-Контракт (интерфейс) | прилагательное или существительное | Authenticatable | ~~AuthenticationInterface, IAuthentication~~
-Трейт | прилагательное | Notifiable | ~~NotificationTrait~~
+Kontroller | təklik | ArticleController | ~~ArticlesController~~
+Marşrutlar | cəmlik | articles/1 | ~~article/1~~
+Marşrut adları | snake_case | users.show_active | ~~users.show-active, show-active-users~~
+Model | təklik | User | ~~Users~~
+hasOne və belongsTo əlaqələri | təklik | articleComment | ~~articleComments, article_comment~~
+Digər əlaqələr | cəmlik | articleComments | ~~articleComment, article_comments~~
+Cədvəl | cəmlik | article_comments | ~~article_comment, articleComments~~
+Pivot cədvəl | təklik (model adları əlifba sırası ilə) | article_user | ~~user_article, articles_users~~
+Cədvəl sütunu | snake_case (model adı olmadan) | meta_title | ~~MetaTitle; article_meta_title~~
+Model dəyişənləri | snake_case | $model->created_at | ~~$model->createdAt~~
+Kənar açarlar | model adı təklikdə və _id | article_id | ~~ArticleId, id_article, articles_id~~
+Əsas açar | - | id | ~~custom_id~~
+Miqrasiya | - | 2017_01_01_000000_create_articles_table | ~~2017_01_01_000000_articles~~
+Metod | camelCase | getAll | ~~get_all~~
+Resurs kontrollerlərində metod | [cədvəl](https://laravel.com/docs/master/controllers#resource-controllers) | store | ~~saveArticle~~
+Test metodları | camelCase | testGuestCannotSeeArticle | ~~test_guest_cannot_see_article~~
+Dəyişənlər | camelCase | $articlesWithAuthor | ~~$articles_with_author~~
+Kolleksiyalar | təsvir edici cəmlikdə | $activeUsers = User::active()->get() | ~~$active, $data~~
+Obyekt | təsvir edici təklikdə | $activeUser = User::active()->first() | ~~$users, $obj~~
+Config və dil fayllarında indekslər | snake_case | articles_enabled | ~~ArticlesEnabled; articles-enabled~~
+View | kebab-case | show-filtered.blade.php | ~~showFiltered.blade.php, show_filtered.blade.php~~
+Config fayl | snake_case | google_calendar.php | ~~googleCalendar.php, google-calendar.php~~
+Kontrakt (interface) | sifət və ya isim | Authenticatable | ~~AuthenticationInterface, IAuthentication~~
+Trait | sifət | Notifiable | ~~NotificationTrait~~
 
 [🔝 Başa qayıt](#Mündəricat)
 
