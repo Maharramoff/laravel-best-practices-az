@@ -12,7 +12,7 @@ Hədəfimiz Laravel üçün SOLID, Dizayn şablonları və s. kimi bəlli təcr�
 
 [Biznes məntiqi xidməti siniflərdə](#Biznes-məntiqi-xidməti-siniflərdə)
 
-[Təkrar etmə (DRY)](#təkrar-etmə)
+[Özün-özünü təkrarlama (DRY: Don't repeat yourself)](#təkrar-etmə)
 
 [Sorğular konstruktorundan (query builder) və verilənlər bazasına birbaşa sorğulardan daha çox Eloquentə üstünlük verin. Massivlərlə işləmək üçün kolleksiyalara üstünlük verin](#sorğular-konstruktorundan-(query-builder)-və-verilənlər-bazasına-birbaşa-sorğulardan-daha-çox-Eloquentə-üstünlük-verin.-Massivlərlə-işləmək-üçün-kolleksiyalara-üstünlük-verin)
 
