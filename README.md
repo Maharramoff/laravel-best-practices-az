@@ -40,11 +40,11 @@ Hədəfimiz Laravel üçün SOLID, Dizayn şablonları və s. kimi bəlli təcr�
 
 [Digər tövsiyə və təcrübələr](#digər-tövsiyə-və-təcrübələr)
 
-### **Принцип единственной ответственности (Single responsibility principle)**
+### **Tək öhdəlik prinsipi (Single responsibility principle)**
 
-Каждый класс и метод должны выполнять лишь одну функцию.
+Hər bir sinif və metod ancaq bir işə cavabdeh olmalıdır.
 
-Плохо:
+Pis:
 
 ```php
 public function getFullNameAttribute()
@@ -57,7 +57,7 @@ public function getFullNameAttribute()
 }
 ```
 
-Хорошо:
+Yaxşı:
 
 ```php
 public function getFullNameAttribute()
@@ -81,7 +81,7 @@ public function getFullNameShort()
 }
 ```
 
-[🔝 Наверх](#Содержание)
+[🔝 Başa qayıt](#Mündəricat)
 
 ### **Тонкие контроллеры, толстые модели**
 
