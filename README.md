@@ -22,7 +22,7 @@ Hədəfimiz Laravel üçün SOLID, Dizayn şablonları və s. kimi bəlli təcr�
 
 [Kodlarınızı şərh edin, amma daha da yaxşısı oxunaqlı metod adlarına üstünlük verin](#Kodlarınızı-şərh-edin-amma-daha-da-yaxşısı-oxunaqlı-metod-adlarına-üstünlük-verin)
 
-[Blade Şablonlarında JS və CSS, PHP Kodunda isə HTML yazmayın](#Blade-şablonlarında-JS-və-CSS-PHP-Kodunda-isə-HTML-yazmayın)
+[Blade Şablonlarında JS və CSS, PHP Kodunda isə HTML yazmayın](#Blade-şablonlarında-js-və-css-php-kodunda-isə-html-yazmayın)
 
 [Laravel toplumunun qəbul etdiyi standart vasitələrdən və təcrübələrdən istifadə edin](#Laravel-toplumunun-qəbul-etdiyi-standart-vasitələrdən-və-təcrübələrdən-istifadə-edin)
 
@@ -348,7 +348,7 @@ if ($this->hasJoins())
 
 [🔝 Başa qayıt](#Mündəricat)
 
-### **Выносите JS и CSS из шаблонов Blade и HTML из PHP кода**
+### **Blade Şablonlarında JS və CSS, PHP Kodunda isə HTML yazmayın**
 
 Pis:
 
@@ -356,23 +356,23 @@ Pis:
 let article = `{{ json_encode($article) }}`;
 ```
 
-Лучше:
+Nisbətən yaxşı:
 
 ```php
 <input id="article" type="hidden" value='@json($article)'>
 
-Или
+Və ya
 
 <button class="js-fav-article" data-article='@json($article)'>{{ $article->name }}<button>
 ```
 
-В Javascript файле:
+JavaScript kodu:
 
-```php
+```js
 let article = $('#article').val();
 ```
 
-Еще лучше использовать специализированный пакет для передачи данных из бэкенда во фронтенд.
+Məlumatları backend-dən frontend-ə ötürmək üçün xüsusi bir paket istifadə etmək daha yaxşı olar.
 
 [🔝 Başa qayıt](#Mündəricat)
 
