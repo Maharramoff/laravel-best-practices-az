@@ -1,4 +1,4 @@
-![sdadsd](img/logo-full.gif)
+![sdadsd](img/animated-logo.gif)
 
 Hədəfimiz Laravel üçün SOLID, Dizayn şablonları və s. kimi bəlli təcrübələri təkrarlamaq deyil, əksinə, məhz real Laravel layihələrində nəzərə alınmayan təcrübələri bir araya toplamaqdır.
 
