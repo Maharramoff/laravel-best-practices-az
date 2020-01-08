@@ -554,7 +554,7 @@ $apiKey = config('api.key');
 
 [🔝 Başa qayıt](#Mündəricat)
 
-### **Храните даты в стандартном формате. Используйте читатели и преобразователи для преобразования формата**
+### **Tarixləri standart formatda qeyd edin. Digər formata çevirmək üçün isə accessor və mutatorlardan istifadə edin**
 
 Pis:
 
@@ -566,25 +566,25 @@ Pis:
 Yaxşı:
 
 ```php
-// Модель
+// Model
 protected $dates = ['ordered_at', 'created_at', 'updated_at'];
-// Читатель (accessor)
+// Oxucu (accessor)
 public function getSomeDateAttribute($date)
 {
     return $date->format('m-d');
 }
 
-// Шаблон
+// Şablon
 {{ $object->ordered_at->toDateString() }}
 {{ $object->ordered_at->some_date }}
 ```
 
 [🔝 Başa qayıt](#Mündəricat)
 
-### **Другие советы и практики**
+### **Digər tövsiyə və təcrübələr**
 
-Не размещайте логику в маршрутах.
+Marşrutlarda məntiq yazmayın.
 
-Старайтесь не использовать "сырой" PHP в шаблонах Blade.
+Blade şablonlarında çalışın standart PHP istifadə etməyin.
 
 [🔝 Başa qayıt](#Mündəricat)
