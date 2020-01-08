@@ -167,9 +167,10 @@ class PostRequest extends Request
 
 [🔝 Başa qayıt](#Mündəricat)
 
-### **Бизнес логика в сервис-классах**
+### **Biznes məntiqi xidməti siniflərdə**
 
 Контроллер должен выполнять только свои прямые обязанности, поэтому выносите всю бизнес логику в отдельные классы и сервис классы.
+Kontroller yalnız birbaşa öz vəzifələrini yerinə yetirməlidir, ona görə də biznes məntiqini başqa siniflərə və service siniflərinə köçürün.
 
 Pis:
 
