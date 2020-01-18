@@ -10,7 +10,7 @@ Hədəfimiz Laravel üçün SOLID, Dizayn şablonları və s. kimi bəlli təcr�
 
 [Validasiya](#validasiya)
 
-[Biznes məntiqi xidməti siniflərdə](#Biznes-məntiqi-xidməti-siniflərdə)
+[Biznes məntiqi xidməti (Service) siniflərdə](#Biznes-məntiqi-xidməti-service-siniflərdə)
 
 [Özün-özünü təkrarlama (DRY: Don't repeat yourself)](#Özün-özünü-təkrarlama)
 
@@ -167,7 +167,7 @@ class PostRequest extends Request
 
 [🔝 Başa qayıt](#Mündəricat)
 
-### **Biznes məntiqi xidməti siniflərdə**
+### **Biznes məntiqi xidməti (Service) siniflərdə**
 
 Kontroller yalnız birbaşa öz vəzifələrini yerinə yetirməlidir, ona görə də biznes məntiqini başqa siniflərə və service siniflərinə köçürün.
 
