@@ -14,7 +14,7 @@ Hədəfimiz Laravel üçün SOLID, Dizayn şablonları və s. kimi bəlli təcr�
 
 [Kodunu təkrarlama (DRY: Don't repeat yourself)](#Kodunu-təkrarlama)
 
-[Sorğular konstruktorundan (query builder) və verilənlər bazasına birbaşa sorğulardan daha çox Eloquentə üstünlük verin. Massivlərlə işləmək üçün kolleksiyalara üstünlük verin](#Sorğular-konstruktorundan-query-builder-və-verilənlər-bazasına-birbaşa-sorğulardan-daha-çox-Eloquentə-üstünlük-verin-massivlərlə-işləmək-üçün-kolleksiyalara-üstünlük-verin)
+[Sorğu yaradıcısının (query builder) və verilənlər bazasına birbaşa sorğuların əvəzinə Eloquent istifadə edin. Massivlərlə işləmək üçün kolleksiyalara üstünlük verin](#Sorğular-yaradıcısının-query-builder-və-verilənlər-bazasına-birbaşa-sorğuların-əvəzinə-Eloquent-istifadə-edin-massivlərlə-işləmək-üçün-kolleksiyalara-üstünlük-verin)
 
 [Toplu doldurma istifadə edin (mass assignment)](#Toplu-doldurma-istifadə-edin)
 
@@ -250,7 +250,7 @@ public function getArticles()
 
 [🔝 Başa qayıt](#Mündəricat)
 
-### **Sorğular konstruktorundan (query builder) və verilənlər bazasına birbaşa sorğulardan daha çox Eloquentə üstünlük verin. Massivlərlə işləmək üçün kolleksiyalara üstünlük verin**
+### **Sorğu yaradıcısının (query builder) və verilənlər bazasına birbaşa sorğuların əvəzinə Eloquent istifadə edin. Massivlərlə işləmək üçün kolleksiyalara üstünlük verin**
 
 Eloquent maksimum oxunaqlı kod yazmağa imkan verir, onun funksionalığını dəyişmək isə olduqca sadədir. Eloquentdə həmçinin, bir-sıra digər rahat və güclü alətlər var.
 
