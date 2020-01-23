@@ -336,7 +336,7 @@ if (count((array) $builder->getQuery()->joins) > 0)
 Nisbətən yaxşı:
 
 ```php
-// Determine if there are any joins.
+// Join olub olmadığını müəyyənləşdirin.
 if (count((array) $builder->getQuery()->joins) > 0)
 ```
 
