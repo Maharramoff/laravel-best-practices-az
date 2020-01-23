@@ -252,7 +252,7 @@ public function getArticles()
 
 ### **Sorğu yaradıcısının (query builder) və verilənlər bazasına birbaşa sorğuların əvəzinə Eloquent istifadə edin. Massivlərlə işləmək üçün kolleksiyalara üstünlük verin**
 
-Eloquent maksimum oxunaqlı kod yazmağa imkan verir, onun funksionalığını dəyişmək isə olduqca sadədir. Eloquentdə həmçinin, bir-sıra digər rahat və güclü alətlər var.
+Eloquent maksimum oxunaqlı kod yazmağa imkan verir, onun funksionallığını dəyişmək isə olduqca sadədir. Eloquentdə həmçinin, bir-sıra digər rahat və güclü alətlər var.
 
 Pis:
 
